@@ -138,7 +138,7 @@
         <!--Button animations-->
         <scene sceneID="It5-Nr-fkq">
             <objects>
-                <viewController id="3hm-S3-ydc" sceneMemberID="viewController">
+                <viewController id="3hm-S3-ydc" customClass="NGNButtonAnimationsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qyz-kw-She"/>
                         <viewControllerLayoutGuide type="bottom" id="VaS-fu-EnS"/>
@@ -157,7 +157,7 @@
         <!--Car racing-->
         <scene sceneID="JsN-QZ-scJ">
             <objects>
-                <viewController id="qaW-Uw-lS1" sceneMemberID="viewController">
+                <viewController id="qaW-Uw-lS1" customClass="NGNCarRacingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LAr-lJ-0KB"/>
                         <viewControllerLayoutGuide type="bottom" id="Sj8-jR-JiA"/>
@@ -176,7 +176,7 @@
         <!--Louvers-->
         <scene sceneID="SNr-Ue-5SN">
             <objects>
-                <viewController id="uKJ-Bw-dT2" sceneMemberID="viewController">
+                <viewController id="uKJ-Bw-dT2" customClass="NGNLouversViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PVJ-Cy-OXC"/>
                         <viewControllerLayoutGuide type="bottom" id="gtg-jn-yEf"/>
@@ -195,7 +195,7 @@
         <!--Running line-->
         <scene sceneID="DCo-9W-zcf">
             <objects>
-                <viewController id="NCm-kc-gmg" sceneMemberID="viewController">
+                <viewController id="NCm-kc-gmg" customClass="NGNRunningLineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WOI-cb-iF9"/>
                         <viewControllerLayoutGuide type="bottom" id="IrL-rO-YlF"/>
@@ -214,7 +214,7 @@
         <!--Orbits-->
         <scene sceneID="pMv-Q7-GeN">
             <objects>
-                <viewController id="jjt-cN-aec" sceneMemberID="viewController">
+                <viewController id="jjt-cN-aec" customClass="NGNOrbitsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="86W-Ow-wPW"/>
                         <viewControllerLayoutGuide type="bottom" id="eft-a3-v5A"/>

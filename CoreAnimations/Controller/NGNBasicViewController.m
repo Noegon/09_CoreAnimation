@@ -6,13 +6,13 @@
 //  Copyright © 2017 Alexey Stafeyev. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "NGNBasicViewController.h"
 
-@interface ViewController ()
+@interface NGNBasicViewController ()
 
 @end
 
-@implementation ViewController
+@implementation NGNBasicViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
