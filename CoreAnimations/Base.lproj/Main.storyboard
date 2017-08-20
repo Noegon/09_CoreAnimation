@@ -146,13 +146,73 @@
                     <view key="view" contentMode="scaleToFill" id="he2-b8-IAx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jA-XE-1os">
+                                <rect key="frame" x="137" y="164" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eBz-kc-7hG"/>
+                                    <constraint firstAttribute="width" constant="100" id="tBx-of-e6g"/>
+                                </constraints>
+                                <state key="normal" title="Scale button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="scaleButtonTapped:" destination="3hm-S3-ydc" eventType="touchUpInside" id="NEM-G2-ft0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete this item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-ek-a8u">
+                                <rect key="frame" x="16" y="274" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5ts-17-c5l"/>
+                                    <constraint firstAttribute="width" constant="150" id="Oci-Io-IDF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trashcart" translatesAutoresizingMaskIntoConstraints="NO" id="7PY-Fk-vHe">
+                                <rect key="frame" x="123" y="477" width="128" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="JXf-zs-LgM"/>
+                                    <constraint firstAttribute="width" constant="128" id="NfP-wA-7Wb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-top-car" translatesAutoresizingMaskIntoConstraints="NO" id="TpH-wa-MS8">
+                                <rect key="frame" x="186" y="274" width="83" height="37"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="0he-1k-s1o"/>
+                                    <constraint firstAttribute="height" constant="37" id="ISS-9f-GCo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lld-ek-a8u" firstAttribute="leading" secondItem="he2-b8-IAx" secondAttribute="leadingMargin" id="0Ja-Hc-SAk"/>
+                            <constraint firstItem="7PY-Fk-vHe" firstAttribute="centerX" secondItem="he2-b8-IAx" secondAttribute="centerX" id="Bpe-w6-8Qx"/>
+                            <constraint firstItem="VaS-fu-EnS" firstAttribute="top" secondItem="7PY-Fk-vHe" secondAttribute="bottom" constant="30" id="C4D-NE-fHg"/>
+                            <constraint firstItem="Lld-ek-a8u" firstAttribute="top" secondItem="6jA-XE-1os" secondAttribute="bottom" constant="70" id="Hh3-rs-idn"/>
+                            <constraint firstItem="6jA-XE-1os" firstAttribute="centerX" secondItem="he2-b8-IAx" secondAttribute="centerX" id="by0-SL-ldC"/>
+                            <constraint firstItem="TpH-wa-MS8" firstAttribute="top" secondItem="6jA-XE-1os" secondAttribute="bottom" constant="70" id="k6j-9c-hSR"/>
+                            <constraint firstItem="TpH-wa-MS8" firstAttribute="leading" secondItem="Lld-ek-a8u" secondAttribute="trailing" constant="20" id="qDS-dT-05E"/>
+                            <constraint firstItem="6jA-XE-1os" firstAttribute="top" secondItem="qyz-kw-She" secondAttribute="bottom" constant="100" id="toa-TA-Git"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Button animations" id="EX0-nf-E65"/>
+                    <connections>
+                        <outlet property="carToDeleteImage" destination="TpH-wa-MS8" id="jP2-Xm-dQU"/>
+                        <outlet property="trashCartImage" destination="7PY-Fk-vHe" id="mFx-3i-eqY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3i-h5-VTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="139"/>
+            <point key="canvasLocation" x="1836" y="138.98050974512745"/>
         </scene>
         <!--Car racing-->
         <scene sceneID="JsN-QZ-scJ">
@@ -165,7 +225,7 @@
                     <view key="view" contentMode="scaleToFill" id="Lrp-tb-zrn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.90980392160000001" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Car racing" id="qNC-JI-9nE"/>
                 </viewController>
@@ -203,9 +263,28 @@
                     <view key="view" contentMode="scaleToFill" id="vLi-9Y-EKO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is some text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-Pw-zkH">
+                                <rect key="frame" x="16" y="84" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rf0-Y4-IRs"/>
+                                    <constraint firstAttribute="width" constant="200" id="ycH-pg-fmo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SeP-Pw-zkH" firstAttribute="top" secondItem="WOI-cb-iF9" secondAttribute="bottom" constant="20" id="HBX-GC-NAM"/>
+                            <constraint firstItem="SeP-Pw-zkH" firstAttribute="leading" secondItem="vLi-9Y-EKO" secondAttribute="leadingMargin" id="MXr-4k-XBj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Running line" id="TdO-TK-SHh"/>
+                    <connections>
+                        <outlet property="runningLineLabel" destination="SeP-Pw-zkH" id="kqs-g0-r9w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITU-Yq-FWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,13 +301,56 @@
                     <view key="view" contentMode="scaleToFill" id="dnm-Sc-k3f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCF-AP-010" customClass="NGNOrbitView">
+                                <rect key="frame" x="87" y="265.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.38794594999999998" green="0.41017830370000002" blue="0.80674451589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bJt-Vc-dxh"/>
+                                    <constraint firstAttribute="height" constant="200" id="dGZ-ci-0em"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iE-aL-eYF" customClass="NGNOrbitView">
+                                <rect key="frame" x="87.5" y="465.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Rs-BQ-VQP"/>
+                                    <constraint firstAttribute="height" constant="200" id="PkG-uQ-brk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yln-2L-ZjA" customClass="NGNOrbitView">
+                                <rect key="frame" x="87" y="65.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gnm-J2-z1e"/>
+                                    <constraint firstAttribute="height" constant="200" id="zw9-wz-ggh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0iE-aL-eYF" firstAttribute="top" secondItem="mCF-AP-010" secondAttribute="bottom" id="6Sc-ZH-iI9"/>
+                            <constraint firstItem="0iE-aL-eYF" firstAttribute="centerX" secondItem="dnm-Sc-k3f" secondAttribute="centerX" id="a1f-nT-saT"/>
+                            <constraint firstItem="mCF-AP-010" firstAttribute="centerY" secondItem="dnm-Sc-k3f" secondAttribute="centerY" constant="32" id="aZX-He-7iV"/>
+                            <constraint firstItem="mCF-AP-010" firstAttribute="centerX" secondItem="dnm-Sc-k3f" secondAttribute="centerX" id="abg-76-KTo"/>
+                            <constraint firstItem="Yln-2L-ZjA" firstAttribute="centerX" secondItem="dnm-Sc-k3f" secondAttribute="centerX" id="ecx-eC-wGU"/>
+                            <constraint firstItem="mCF-AP-010" firstAttribute="top" secondItem="Yln-2L-ZjA" secondAttribute="bottom" id="vZ4-mp-fmP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Orbits" id="eI5-bD-dVd"/>
+                    <connections>
+                        <outlet property="firstOrbitView" destination="mCF-AP-010" id="DJ2-0W-W83"/>
+                        <outlet property="secondOrbitView" destination="Yln-2L-ZjA" id="jro-0L-eYY"/>
+                        <outlet property="thirdOrbitView" destination="0iE-aL-eYF" id="die-h8-btx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-Tf-j78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="-1005"/>
+            <point key="canvasLocation" x="1096.8" y="-1005.2473763118442"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue-top-car" width="415" height="185"/>
+        <image name="trashcart" width="64" height="80"/>
+    </resources>
 </document>

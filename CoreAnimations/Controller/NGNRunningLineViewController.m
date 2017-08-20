@@ -10,13 +10,25 @@
 
 @interface NGNRunningLineViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *runningLineLabel;
+
 @end
 
 @implementation NGNRunningLineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"position.x";
+    animation.fromValue = @(0.0 - self.runningLineLabel.bounds.size.width / 2);
+    animation.toValue = @(self.view.bounds.size.width + self.runningLineLabel.bounds.size.width / 2);
+    animation.duration = 5;
+    animation.repeatCount = HUGE_VALF;
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    [self.runningLineLabel.layer addAnimation:animation forKey:@"basic"];
 }
 
 @end
