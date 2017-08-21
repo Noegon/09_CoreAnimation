@@ -92,7 +92,13 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
+<<<<<<< HEAD
             endingLineNumber = "46">
+=======
+            endingLineNumber = "46"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+>>>>>>> features/wallpapers_louver_changing
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,7 +112,13 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
+<<<<<<< HEAD
             endingLineNumber = "92">
+=======
+            endingLineNumber = "92"
+            landmarkName = "-changeImageButtonTapped:"
+            landmarkType = "7">
+>>>>>>> features/wallpapers_louver_changing
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -120,7 +132,13 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
+<<<<<<< HEAD
             endingLineNumber = "108">
+=======
+            endingLineNumber = "108"
+            landmarkName = "-changeImageButtonTapped:"
+            landmarkType = "7">
+>>>>>>> features/wallpapers_louver_changing
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

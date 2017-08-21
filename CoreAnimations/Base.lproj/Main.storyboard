@@ -244,9 +244,30 @@
                     <view key="view" contentMode="scaleToFill" id="nw6-a9-5hr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjF-KX-EGR">
+                                <rect key="frame" x="36" y="621" width="303" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Change image">
+                                    <color key="titleColor" red="0.38794594999999998" green="0.41017830370000002" blue="0.80674451589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImageButtonTapped:" destination="uKJ-Bw-dT2" eventType="touchUpInside" id="ilT-6d-prJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gtg-jn-yEf" firstAttribute="top" secondItem="fjF-KX-EGR" secondAttribute="bottom" constant="10" id="2HA-gd-kP2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fjF-KX-EGR" secondAttribute="trailing" constant="20" id="NX7-z5-glt"/>
+                            <constraint firstItem="fjF-KX-EGR" firstAttribute="leading" secondItem="nw6-a9-5hr" secondAttribute="leadingMargin" constant="20" id="c3k-K1-h5f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Louvers" id="gDK-UT-BE2"/>
+                    <connections>
+                        <outlet property="changeImageButton" destination="fjF-KX-EGR" id="myY-3V-M5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rN9-XV-LrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
