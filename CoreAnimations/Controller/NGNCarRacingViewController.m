@@ -20,12 +20,19 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    CGPoint startPoint = CGPointMake(CGRectGetWidth(self.view.bounds) - 80, 0);
+    CGPoint startPoint = CGPointMake(CGRectGetWidth(self.view.bounds) - 90, 200);
     
     UIBezierPath *trackPath = [UIBezierPath bezierPath];
     [trackPath moveToPoint:startPoint];
-    [trackPath addLineToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
-                                           CGRectGetHeight(self.view.bounds) / 2)];
+    
+//    // straight line is bad practice here
+//    [trackPath addLineToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
+//                                           CGRectGetHeight(self.view.bounds) / 2)];
+//    // better do like this
+    [trackPath addQuadCurveToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
+                                               CGRectGetHeight(self.view.bounds) / 2)
+                      controlPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
+                                               CGRectGetHeight(self.view.bounds) / 2 - 100)];
     
     [trackPath addCurveToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 150,
                                            CGRectGetHeight(self.view.bounds) - 100)
@@ -37,12 +44,12 @@
     [trackPath addQuadCurveToPoint:CGPointMake(50, 350)
                       controlPoint:CGPointMake(150, CGRectGetHeight(self.view.bounds))];
     
-    [trackPath addCurveToPoint:CGPointMake(100, 0)
+    [trackPath addCurveToPoint:CGPointMake(100, 100)
                  controlPoint1:CGPointMake(0, 50)
-                 controlPoint2:CGPointMake(100, 450)];
+                 controlPoint2:CGPointMake(50, 150)];
     
     [trackPath addQuadCurveToPoint:startPoint
-                      controlPoint:CGPointMake(CGRectGetWidth(self.view.bounds) / 2, -200)];
+                      controlPoint:CGPointMake(CGRectGetWidth(self.view.bounds) / 2, 40)];
 
 #warning not very beautiful descision: maybe I could do it in single layer?
     CAShapeLayer *line = [CAShapeLayer layer];
@@ -56,7 +63,7 @@
     line.lineDashPattern = @[@10, @5];
     
     CAShapeLayer *road = [[CAShapeLayer alloc] initWithLayer:line];
-    road.lineWidth = 20.0;
+    road.lineWidth = 25.0;
     road.path = trackPath.CGPath;
     line.bounds = self.view.bounds;
     line.position = self.view.center;

@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITapGestureRecognizer *tapOnCarGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(deleteCar)];
+    UITapGestureRecognizer *tapOnCarGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moveCarToTrashCart)];
     [self.carToDeleteImage addGestureRecognizer:tapOnCarGesture];
 }
 
@@ -38,16 +38,16 @@
     [sender.layer addAnimation:anim forKey:nil];
 }
 
-- (IBAction)deleteCar {
+- (void)moveCarToTrashCart {
     NSLog(@"%@", @"car was deleted");
     
-    //doing car smaller
+    //making car smaller
     CABasicAnimation *scaleAnim = [CABasicAnimation animationWithKeyPath:@"transform"];
     scaleAnim.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
     scaleAnim.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1.0)];
     scaleAnim.removedOnCompletion = YES;
     
-    //doing car transparent
+    //making car transparent
     CABasicAnimation *opacityAnim = [CABasicAnimation animationWithKeyPath:@"alpha"];
     opacityAnim.fromValue = [NSNumber numberWithFloat:1.0];
     opacityAnim.toValue = [NSNumber numberWithFloat:0.1];
@@ -72,7 +72,8 @@
     
     [CATransaction begin]; {
         [CATransaction setCompletionBlock:^{
-            [self.carToDeleteImage removeFromSuperview];
+            //car view will not be deleted
+//            [self.carToDeleteImage removeFromSuperview];
         }];
         [self.carToDeleteImage.layer addAnimation:scaleAnim forKey:@"transform"];
         [self.carToDeleteImage.layer addAnimation:opacityAnim forKey:@"alpha"];
