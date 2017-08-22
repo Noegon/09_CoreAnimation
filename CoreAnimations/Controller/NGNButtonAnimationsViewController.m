@@ -64,17 +64,8 @@
     moveAnim.path = movePath.CGPath;
     moveAnim.removedOnCompletion = YES;
     
-    //adding all animations into group
-//    CAAnimationGroup *animGroup = [CAAnimationGroup animation];
-//    animGroup.animations = [NSArray arrayWithObjects:moveAnim, scaleAnim, opacityAnim, nil];
-//    animGroup.duration = 0.5;
-//    [self.carToDeleteImage.layer addAnimation:animGroup forKey:nil];
-    
     [CATransaction begin]; {
-        [CATransaction setCompletionBlock:^{
-            //car view will not be deleted
-//            [self.carToDeleteImage removeFromSuperview];
-        }];
+        [CATransaction setCompletionBlock:^{ }];
         [self.carToDeleteImage.layer addAnimation:scaleAnim forKey:@"transform"];
         [self.carToDeleteImage.layer addAnimation:opacityAnim forKey:@"alpha"];
         [self.carToDeleteImage.layer addAnimation:moveAnim forKey:@"position"];
