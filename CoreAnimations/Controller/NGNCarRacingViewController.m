@@ -25,10 +25,6 @@
     UIBezierPath *trackPath = [UIBezierPath bezierPath];
     [trackPath moveToPoint:startPoint];
     
-//    // straight line is bad practice here
-//    [trackPath addLineToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
-//                                           CGRectGetHeight(self.view.bounds) / 2)];
-//    // better do like this
     [trackPath addQuadCurveToPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
                                                CGRectGetHeight(self.view.bounds) / 2)
                       controlPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 50,
@@ -51,7 +47,6 @@
     [trackPath addQuadCurveToPoint:startPoint
                       controlPoint:CGPointMake(CGRectGetWidth(self.view.bounds) / 2, 40)];
 
-#warning not very beautiful descision: maybe I could do it in single layer?
     CAShapeLayer *line = [CAShapeLayer layer];
     line.lineWidth = 3.0;
     line.path = trackPath.CGPath;

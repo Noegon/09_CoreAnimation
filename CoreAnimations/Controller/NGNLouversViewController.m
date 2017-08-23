@@ -62,12 +62,6 @@
     zPosition.fromValue = @1;
     zPosition.toValue = @(-1);
     zPosition.duration = 2.0;
-
-//    CAAnimationGroup *group = [[CAAnimationGroup alloc] init];
-//    group.animations = @[zPosition, rotation];
-//    group.duration = 1.2;
-//    group.removedOnCompletion = YES;
-//    [layer addAnimation:group forKey:@"shuffle"];
     
     [CATransaction begin]; {
         [CATransaction setCompletionBlock:^{
