@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		4085FF4A1F478BDE005FB723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF491F478BDE005FB723 /* main.m */; };
 		4085FF4D1F478BDE005FB723 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF4C1F478BDE005FB723 /* AppDelegate.m */; };
-		4085FF501F478BDE005FB723 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF4F1F478BDE005FB723 /* ViewController.m */; };
 		4085FF531F478BDE005FB723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4085FF511F478BDE005FB723 /* Main.storyboard */; };
 		4085FF551F478BDE005FB723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4085FF541F478BDE005FB723 /* Assets.xcassets */; };
 		4085FF581F478BDE005FB723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4085FF561F478BDE005FB723 /* LaunchScreen.storyboard */; };
+		4085FF631F47928E005FB723 /* NGNOrbitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF621F47928E005FB723 /* NGNOrbitsViewController.m */; };
+		4085FF661F4792A2005FB723 /* NGNBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF651F4792A2005FB723 /* NGNBasicViewController.m */; };
+		4085FF691F4792CC005FB723 /* NGNLouversViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF681F4792CC005FB723 /* NGNLouversViewController.m */; };
+		4085FF6C1F479329005FB723 /* NGNRunningLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF6B1F479329005FB723 /* NGNRunningLineViewController.m */; };
+		4085FF6F1F47934F005FB723 /* NGNButtonAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF6E1F47934F005FB723 /* NGNButtonAnimationsViewController.m */; };
+		4085FF721F479369005FB723 /* NGNCarRacingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF711F479369005FB723 /* NGNCarRacingViewController.m */; };
+		4085FF791F48C470005FB723 /* NGNOrbitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085FF781F48C470005FB723 /* NGNOrbitView.m */; };
+		4085FF7B1F48C48D005FB723 /* NGNOrbitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4085FF7A1F48C48D005FB723 /* NGNOrbitView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +27,25 @@
 		4085FF491F478BDE005FB723 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4085FF4B1F478BDE005FB723 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4085FF4C1F478BDE005FB723 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4085FF4E1F478BDE005FB723 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4085FF4F1F478BDE005FB723 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4085FF521F478BDE005FB723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4085FF541F478BDE005FB723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4085FF571F478BDE005FB723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4085FF591F478BDE005FB723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4085FF611F47928E005FB723 /* NGNOrbitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNOrbitsViewController.h; path = Controller/NGNOrbitsViewController.h; sourceTree = "<group>"; };
+		4085FF621F47928E005FB723 /* NGNOrbitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNOrbitsViewController.m; path = Controller/NGNOrbitsViewController.m; sourceTree = "<group>"; };
+		4085FF641F4792A2005FB723 /* NGNBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNBasicViewController.h; path = Controller/NGNBasicViewController.h; sourceTree = "<group>"; };
+		4085FF651F4792A2005FB723 /* NGNBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNBasicViewController.m; path = Controller/NGNBasicViewController.m; sourceTree = "<group>"; };
+		4085FF671F4792CC005FB723 /* NGNLouversViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNLouversViewController.h; path = Controller/NGNLouversViewController.h; sourceTree = "<group>"; };
+		4085FF681F4792CC005FB723 /* NGNLouversViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNLouversViewController.m; path = Controller/NGNLouversViewController.m; sourceTree = "<group>"; };
+		4085FF6A1F479329005FB723 /* NGNRunningLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNRunningLineViewController.h; path = Controller/NGNRunningLineViewController.h; sourceTree = "<group>"; };
+		4085FF6B1F479329005FB723 /* NGNRunningLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNRunningLineViewController.m; path = Controller/NGNRunningLineViewController.m; sourceTree = "<group>"; };
+		4085FF6D1F47934F005FB723 /* NGNButtonAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNButtonAnimationsViewController.h; path = Controller/NGNButtonAnimationsViewController.h; sourceTree = "<group>"; };
+		4085FF6E1F47934F005FB723 /* NGNButtonAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNButtonAnimationsViewController.m; path = Controller/NGNButtonAnimationsViewController.m; sourceTree = "<group>"; };
+		4085FF701F479369005FB723 /* NGNCarRacingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNCarRacingViewController.h; path = Controller/NGNCarRacingViewController.h; sourceTree = "<group>"; };
+		4085FF711F479369005FB723 /* NGNCarRacingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNCarRacingViewController.m; path = Controller/NGNCarRacingViewController.m; sourceTree = "<group>"; };
+		4085FF771F48C470005FB723 /* NGNOrbitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGNOrbitView.h; path = View/NGNOrbitView.h; sourceTree = "<group>"; };
+		4085FF781F48C470005FB723 /* NGNOrbitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGNOrbitView.m; path = View/NGNOrbitView.m; sourceTree = "<group>"; };
+		4085FF7A1F48C48D005FB723 /* NGNOrbitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NGNOrbitView.xib; path = View/NGNOrbitView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +78,10 @@
 		4085FF471F478BDE005FB723 /* CoreAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				4085FF731F48C410005FB723 /* View */,
+				4085FF601F479265005FB723 /* Controller */,
 				4085FF4B1F478BDE005FB723 /* AppDelegate.h */,
 				4085FF4C1F478BDE005FB723 /* AppDelegate.m */,
-				4085FF4E1F478BDE005FB723 /* ViewController.h */,
-				4085FF4F1F478BDE005FB723 /* ViewController.m */,
-				4085FF511F478BDE005FB723 /* Main.storyboard */,
-				4085FF541F478BDE005FB723 /* Assets.xcassets */,
-				4085FF561F478BDE005FB723 /* LaunchScreen.storyboard */,
-				4085FF591F478BDE005FB723 /* Info.plist */,
 				4085FF481F478BDE005FB723 /* Supporting Files */,
 			);
 			path = CoreAnimations;
@@ -74,9 +90,42 @@
 		4085FF481F478BDE005FB723 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4085FF511F478BDE005FB723 /* Main.storyboard */,
+				4085FF541F478BDE005FB723 /* Assets.xcassets */,
+				4085FF561F478BDE005FB723 /* LaunchScreen.storyboard */,
+				4085FF591F478BDE005FB723 /* Info.plist */,
 				4085FF491F478BDE005FB723 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4085FF601F479265005FB723 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4085FF641F4792A2005FB723 /* NGNBasicViewController.h */,
+				4085FF651F4792A2005FB723 /* NGNBasicViewController.m */,
+				4085FF611F47928E005FB723 /* NGNOrbitsViewController.h */,
+				4085FF621F47928E005FB723 /* NGNOrbitsViewController.m */,
+				4085FF671F4792CC005FB723 /* NGNLouversViewController.h */,
+				4085FF681F4792CC005FB723 /* NGNLouversViewController.m */,
+				4085FF6A1F479329005FB723 /* NGNRunningLineViewController.h */,
+				4085FF6B1F479329005FB723 /* NGNRunningLineViewController.m */,
+				4085FF6D1F47934F005FB723 /* NGNButtonAnimationsViewController.h */,
+				4085FF6E1F47934F005FB723 /* NGNButtonAnimationsViewController.m */,
+				4085FF701F479369005FB723 /* NGNCarRacingViewController.h */,
+				4085FF711F479369005FB723 /* NGNCarRacingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4085FF731F48C410005FB723 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4085FF771F48C470005FB723 /* NGNOrbitView.h */,
+				4085FF781F48C470005FB723 /* NGNOrbitView.m */,
+				4085FF7A1F48C48D005FB723 /* NGNOrbitView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +191,7 @@
 				4085FF581F478BDE005FB723 /* LaunchScreen.storyboard in Resources */,
 				4085FF551F478BDE005FB723 /* Assets.xcassets in Resources */,
 				4085FF531F478BDE005FB723 /* Main.storyboard in Resources */,
+				4085FF7B1F48C48D005FB723 /* NGNOrbitView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4085FF501F478BDE005FB723 /* ViewController.m in Sources */,
+				4085FF791F48C470005FB723 /* NGNOrbitView.m in Sources */,
+				4085FF631F47928E005FB723 /* NGNOrbitsViewController.m in Sources */,
+				4085FF691F4792CC005FB723 /* NGNLouversViewController.m in Sources */,
 				4085FF4D1F478BDE005FB723 /* AppDelegate.m in Sources */,
+				4085FF721F479369005FB723 /* NGNCarRacingViewController.m in Sources */,
 				4085FF4A1F478BDE005FB723 /* main.m in Sources */,
+				4085FF6C1F479329005FB723 /* NGNRunningLineViewController.m in Sources */,
+				4085FF6F1F47934F005FB723 /* NGNButtonAnimationsViewController.m in Sources */,
+				4085FF661F4792A2005FB723 /* NGNBasicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +371,7 @@
 				4085FF5E1F478BDE005FB723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
